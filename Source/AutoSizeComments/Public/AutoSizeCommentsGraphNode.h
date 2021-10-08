@@ -10,7 +10,7 @@
 #include "Widgets/DeclarativeSyntaxSupport.h"
 
 #define ASC_UE_VERSION_OR_LATER(major, minor) ENGINE_MAJOR_VERSION == major && ENGINE_MINOR_VERSION >= minor || ENGINE_MAJOR_VERSION > major
-#define ASC_USE_NEW_MOVETO ENGINE_MAJOR_VERSION == 4 && ENGINE_MINOR_VERSION >= 27
+#define ASC_USE_NEW_MOVETO ASC_UE_VERSION_OR_LATER(4, 27)
 
 struct FPresetCommentStyle;
 class UEdGraphNode_Comment;
